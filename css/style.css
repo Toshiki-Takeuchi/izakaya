@@ -1,0 +1,508 @@
+@charset "UTF-8";
+
+/* 共通部分 --------*/
+html {
+    font-size: 100%;
+}
+
+body{font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシック体、”ヒラギノ角ゴ Pro W3",sans-serif;
+     line-height: 1.7;
+     color: #ffffff;
+    margin-top: 0;
+    background: url(../kadai1/ブラック1.jpeg);	/*背景画像（古いブラウザ用）*/
+	background: url(../kadai1/ブラック1.jpeg) repeat-x center top, url(../kadai1/ブラック1.jpeg);/*左からカンマで区切って背景画像を2つ指定*/
+	-webkit-text-size-adjust: none;
+    }
+a{
+    text-decoration:  none;
+}
+img{
+    max-width: 100%;
+}
+/*  HEADER ------*/
+.logo{
+    width: 110px;
+    margin-top: 14px;
+    justify-content: space-between;
+}
+.main-nav{
+    display: flex;
+    font-size:1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+
+}
+.main-nav li{
+    margin-left: 36px;
+}
+.main-nav a{
+    color:rgb(255, 255, 255);
+    text-shadow:5px 6px 7px #1d1c1c; 
+}
+
+.main-nav a:hover{
+    border-style: outset;
+    color: #000;
+
+}
+
+.main-nav a:hover{
+    color:rgb(129, 132, 133);
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 4%;
+}
+.page-title2{
+    font-family:'Reggae One', cursive;
+    color: #000000;
+    font-size: 65px;
+    padding-top: 50px;
+    text-shadow:5px 6px 7px #808080; 
+}
+
+/* HOME----------------- */
+.home-content{
+text-align:center;
+margin-top: 10%;
+}
+.home-content p{
+      font-size: 1.125rem;
+      margin:10px 0 42px;
+}
+/* 見出し */
+.page-title{
+    font-size:3rem;
+    font-family:'Reggae One', cursive;
+    text-transform:uppercase;
+    font-weight:normal;
+    text-align:center;
+    color: #000000;
+}
+/* ボタン-------- */
+.button {
+    background: #8d8b8b;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #080808;
+    transition: 0.3s ease-in-out;
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+   
+}
+.button:hover{
+    background: #050505;
+    color: #fbf8f8;
+}
+/* 大きな背景画像 */
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+}
+#home{
+    background-image: url(../kadai1/IMG_0324\ 2.JPG);
+    background-color:rgb(170, 113, 9);
+    background-blend-mode: hard-light;
+    min-height: 100vh;
+}
+#home .page-title{
+    text-transform: none;
+}
+/* MENU------------ */
+
+/* #menu{
+     background-image: url(../kadai1/IMG_7573.JPG); 
+    height: 70vh;
+    margin-bottom: 50px;
+} */
+
+
+h3{
+    height: 60px;
+    background:linear-gradient(#5e532e, #39331f);
+    padding:10px 20px;
+    border-bottom: 5px solid #cd2a0a
+
+}
+
+#menu .page-title{
+    text-align:center;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    font-family: 'Reggae One', cursive;
+    padding: -10px;
+    border-radius: 50px;
+    
+
+    
+}
+
+.menu-content{
+    max-width: 350px;
+    margin-top: 10%;
+}
+.menu-content .page-title{
+    text-align:center;
+}
+.menu-content p{
+    font-size:1.125rem;
+}
+
+#cource{
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.grid{
+    color: #dc8419;
+    font-size: 20px;
+    display: grid;
+    gap:60px 1.4%;
+
+    grid-template-columns: repeat(3,1fr);
+    overflow: hidden;
+    padding-top:10px;
+    position: relative;
+    overflow:hidden;
+
+}
+.item{
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+}
+.item img{
+    display: block;
+    transition-duration: 0.5s;
+}
+/* .item img:hover{ */
+    /* transform: scale(1.2,1.2); */
+    /* transition-duration: 0.5s; */
+
+/* } */
+.item a{
+    color: #ffffff;
+
+}
+img.example{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* NEWS------------- */
+#news{
+    background-image: url(../kadai1/IMG_6820\ 2.JPG);
+    margin-bottom: 10px;
+}
+#news .page-title{
+    text-align:center;
+    padding-left: 10px;
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.news-contents img{
+    height: 700px;
+    
+}
+
+#new dt {
+    float: left;
+    width: 9em;
+    letter-spacing: 0.1em;
+}
+#new dd{
+    padding-left:9em;
+}
+#new {
+    background-color:#000
+}
+section{
+    margin-bottom: 50px;
+}
+
+dt{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-weight: normal;
+    display: block;
+}
+
+dd{
+    margin: 0px;
+    padding:10px;
+    font-size: 100%;
+    font-weight: normal;
+    display: block;
+    margin-block-start: 10px;
+}
+.newicon {
+    background: #F00;
+    color: #FFF;
+    font-size: 70%;
+    line-height: 1.5;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin: 0px 5px;
+    vertical-align: text-top;
+}
+
+
+.sub-title{
+    font-size: 16px;
+}
+.sub-menu a{
+    color: #fff;
+}
+.sub-menu :hover{
+    color: #000;
+}
+
+.post-info{
+  padding: 0px;
+  
+}
+
+article img{
+    margin-bottom: 20px;
+    /* height: 100vh; */
+
+
+}
+article p{
+    margin-bottom:1rem;
+}
+/* aside{
+    width: 10%;
+    font-size:16px;
+} */
+.sub-menu a{
+    color: #fff;
+    padding-top: 50px;
+}
+/* ACCESS
+------------------------------- */
+#access {
+    background-image: url(../kadai1/IMG_7567.JPG);
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.page-title{
+    color: #FAF7F0;
+}
+/* STORE----------------- */
+img.store1{
+    width:600px;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+}
+img.store2{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+
+}
+.store{
+    display: flex;
+    object-fit: cover;
+}
+.post-grid{
+    display: grid;
+    gap:26px;
+    grid-template-columns: repeat(2,minmax(240px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+/* フォーム */
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="namber"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="namber"]
+ {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 店舗情報・地図 */
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+
+/* SNS */
+#sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+.sns-box {
+    width: 30%;
+}
+
+/* フッター------ */
+footer{
+    background:rgb(13, 13, 13);
+    text-align: center;
+    padding: 26px 0;
+}
+footer p{
+    color:#fefefe;
+    font-size: 0.875rem;
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /* NEWS */
+    .news-contents {
+        flex-direction: column;
+    }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+
+    /* MENU */
+    .menu-content {
+        margin-top: 20%;
+    }
+
+    /* ACCESS*/
+    #access .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],
+    input[type="email"],
+    input[type="namber"],
+    textarea {
+        max-width: 100%;
+    }
+
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
+    }
+}
