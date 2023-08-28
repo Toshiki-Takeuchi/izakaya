@@ -9,8 +9,8 @@ body{font-family:"Yu Gothic Medium","游ゴシック Medium",YuGothic,"游ゴシ
      line-height: 1.7;
      color: #ffffff;
     margin-top: 0;
-    background: url(../kadai1/ブラック1.jpeg);	/*背景画像（古いブラウザ用）*/
-	background: url(../kadai1/ブラック1.jpeg) repeat-x center top, url(../kadai1/ブラック1.jpeg);/*左からカンマで区切って背景画像を2つ指定*/
+    background: url(../kadai1/black1.jpeg);	/*背景画像（古いブラウザ用）*/
+	background: url(../kadai1/black1.jpeg) repeat-x center top, url(../kadai1/black1.jpeg);/*左からカンマで区切って背景画像を2つ指定*/
 	-webkit-text-size-adjust: none;
     }
 a{
@@ -294,7 +294,7 @@ article p{
 /* ACCESS
 ------------------------------- */
 #access {
-    background-image: url(../kadai1/IMG_7567.JPG);
+    background-image: url(../kadai1/IMG_7567.jpeg);
     height: 400px;
     width: 100%;
     background-position: center;
